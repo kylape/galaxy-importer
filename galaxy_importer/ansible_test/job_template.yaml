@@ -13,6 +13,9 @@ spec:
       containers:
       - name: {job_name}
         image: {image}
+        env:
+          name: ARCHIVE_URL
+          value: {archive_url}
         resources:
           requests:
             cpu: {cpu_request}

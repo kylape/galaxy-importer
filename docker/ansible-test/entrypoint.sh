@@ -7,7 +7,7 @@ pushd ansible_collections/ > /dev/null
 pushd placeholder_namespace/placeholder_name/ > /dev/null
 
 echo "Copying and extracting collection archive..."
-cp /archive/archive.tar.gz .
+wget $ARCHIVE_URL -O archive.tar.gz
 tar -xzf archive.tar.gz
 
 # Get variables from collection metadata
